@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:kirantask/widget/images.dart';
 import 'package:kirantask/widget/invite_card.dart';
 import 'package:kirantask/widget/jems_card.dart';
+import 'package:kirantask/widget/modal.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -22,25 +24,15 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Center(
         child: Container(
-          padding: const EdgeInsets.all(10),
+          padding: EdgeInsets.all(10.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               InviteCard(
-                title: "Blue Jeans Cap",
-                img: AppImage.hat,
-                days: "2 days to go",
-                deal: "Limited time deal",
-                invite: "invites 10 friends to grab this special deal",
-                left: "2 item left",
+                data: Data(img: AppImage.hat, title: "Blue Jeans Cap",days: "2 days to go", deal: "Limited time deal", left: "2 item left", invites: "Invites 10 friends to grab this special deals"),
               ),
-              const SizedBox(height: 15,),
               JemsCard(
-                title: "Blue Jeans Cap",
-                img: AppImage.hat,
-                days: "2 days to go",
-                deal: "Limited time deal",
-                left: "2 item left",
+                data: Data(img: AppImage.hat, title: "Blue Jeans Cap",days: "2 days to go", deal: "Limited time deal", left: "2 item left",),
               ),
             ],
           ),

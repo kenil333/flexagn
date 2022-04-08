@@ -4,7 +4,7 @@ class AppColor{
   static const Color pink = Color(0xffC23FA1);
   static const Color orange = Color(0xffED615E);
   static const Color contback = Color(0xffCBDEFE);
-  static const Color shadowcolor = Color(0xff0000001a);
+  static Color shadowcolor = const Color(0xff000000).withAlpha(1);
   static const Color greenfont = Color(0xff2DAD9D);
   static const Color blackfont = Color(0xff2B2B2B);
   static const Color whitefont = Color(0xffFFFFFF);
